@@ -458,9 +458,24 @@
   }
   .t-card{
     background:var(--offwhite);
-    border:1.5px dashed var(--gold);
-    border-radius:4px;
-    padding:28px 24px;
+    border:1px solid var(--gray-line);
+    border-radius:6px;
+    overflow:hidden;
+  }
+  .t-card .video-embed{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    height:0;
+    background:var(--navy);
+  }
+  .t-card .video-embed iframe{
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
   }
   .t-card .quote-mark{
     font-family:'Cormorant Garamond',serif;
@@ -477,14 +492,14 @@
     min-height:96px;
   }
   .t-card .ph-name{
-    margin-top:18px;
-    padding-top:14px;
+    padding:16px 20px;
     border-top:1px solid var(--gray-line);
     font-size:12.5px;
     font-weight:700;
     letter-spacing:.5px;
     color:var(--gold);
     text-transform:uppercase;
+    background:#fff;
   }
 
   /* ---------- INCLUSO ---------- */
@@ -843,18 +858,21 @@
     </div>
     <div class="testimonials">
       <div class="t-card">
-        <div class="quote-mark">"</div>
-        <div class="ph-text">[ Espaço reservado para depoimento 1. Inserir citação real do empresário. ]</div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/cnqObhNpDos" title="Depoimento 1 · ARG" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div class="ph-name">Nome · Cargo · Empresa</div>
       </div>
       <div class="t-card">
-        <div class="quote-mark">"</div>
-        <div class="ph-text">[ Espaço reservado para depoimento 2. Inserir citação real do empresário. ]</div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/9-OPgGIJ9Po" title="Depoimento 2 · ARG" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div class="ph-name">Nome · Cargo · Empresa</div>
       </div>
       <div class="t-card">
-        <div class="quote-mark">"</div>
-        <div class="ph-text">[ Espaço reservado para depoimento 3. Inserir citação real do empresário. ]</div>
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/zd63L5nrbk8" title="Depoimento 3 · ARG" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div class="ph-name">Nome · Cargo · Empresa</div>
       </div>
     </div>
