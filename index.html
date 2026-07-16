@@ -592,6 +592,41 @@
   }
   footer img{margin:0 auto 18px;width:46px;opacity:.9;}
 
+  /* ---------- MURAL DE DEPOIMENTOS ---------- */
+  .mural-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+  .mural-card{
+    background:#fff;
+    border:1px solid var(--gray-line);
+    border-left:4px solid var(--gold);
+    border-radius:3px;
+    padding:28px 26px;
+  }
+  .mural-card .quote-mark{
+    font-family:'Cormorant Garamond',serif;
+    font-size:38px;
+    color:var(--gold);
+    line-height:1;
+    margin-bottom:6px;
+  }
+  .mural-card .quote-text{
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:17px;
+    color:var(--navy);
+    margin:0 0 16px;
+  }
+  .mural-card .mural-name{
+    font-size:12.5px;
+    font-weight:700;
+    letter-spacing:.5px;
+    color:var(--gold);
+    text-transform:uppercase;
+  }
+
   @media (max-width: 860px){
     .dor-cols{grid-template-columns:1fr;gap:28px;}
     .promise-grid{grid-template-columns:1fr;}
@@ -603,6 +638,7 @@
     .autoridade-photo{max-width:320px;margin:0 auto;}
     .incluso-grid{grid-template-columns:1fr;}
     .testimonials{grid-template-columns:1fr;}
+    .mural-grid{grid-template-columns:1fr;}
     .hero-grid{grid-template-columns:1fr;}
     .hero-copy{text-align:center;}
     .hero p.lede{margin:24px auto 0;}
@@ -874,6 +910,37 @@
           <iframe src="https://www.youtube.com/embed/zd63L5nrbk8" title="Depoimento 3 · ARG" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="ph-name">Flávia Garcia · CEO · Uma Casa Real Planejados</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mural">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Mais quem já governa</span>
+      <h2>Depoimentos reais, sem roteiro</h2>
+    </div>
+    <div class="mural-grid">
+      <div class="mural-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">Tenho falado pras pessoas que a mentoria mudou minha vida, e não é exagero. Agora sei pra onde olhar, sei como me organizar, onde quero chegar e o que preciso fazer. Sinto meu pé no chão, meu coração tranquilo, porque tenho a teoria pra embasar a vontade de fazer dar certo.</p>
+        <div class="mural-name">Julia · Açucena Floricult.</div>
+      </div>
+      <div class="mural-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">Sibely é uma excelente pessoa e é mega capacitada em seu negócio. Ela me ajudou muito com o controle financeiro, tanto meu quanto da minha empresa. Ajuda você com tudo que é necessário para que uma empresa possa crescer com segurança e responsabilidade.</p>
+        <div class="mural-name">Mayara Santin · Sócia · Reis &amp; Alberge Advogados</div>
+      </div>
+      <div class="mural-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">Te conheci em uma situação caótica da empresa. Com seu auxílio, tomei decisões que não tinha coragem até o momento, e a partir delas tudo mudou de jogo. Reestruturei meu financeiro com decisões pequenas e simples e reforcei meu posicionamento.</p>
+        <div class="mural-name">Bruna Gabriele · CEO · Clínica BG</div>
+      </div>
+      <div class="mural-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-text">Sibely, uma profissional com muita experiência que me ajudou a melhorar minha empresa através de seus treinamentos. Fica aqui meu sincero agradecimento e indicação.</p>
+        <div class="mural-name">Lucas Tafarel · CEO · Rio do Sul Refrigeração</div>
       </div>
     </div>
   </div>
